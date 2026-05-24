@@ -1,0 +1,334 @@
+{
+  "version": 1,
+  "contexts": ["global", "indonesian"],
+  "spark": {
+    "global": [
+      {
+        "id": "spark-global-001",
+        "question": "What part of your life looks successful from the outside but feels under-questioned from the inside?",
+        "tags": ["self-awareness", "success", "identity"]
+      },
+      {
+        "id": "spark-global-002",
+        "question": "What do you keep calling a preference, even though it might actually be a fear?",
+        "tags": ["fear", "honesty", "pattern"]
+      },
+      {
+        "id": "spark-global-003",
+        "question": "Which relationship makes you perform a version of yourself that you are slowly outgrowing?",
+        "tags": ["relationships", "identity", "growth"]
+      },
+      {
+        "id": "spark-global-004",
+        "question": "What belief has been useful enough that you forgot to ask whether it is still true?",
+        "tags": ["belief", "change", "reflection"]
+      },
+      {
+        "id": "spark-global-005",
+        "question": "Where are you asking for certainty when what you actually need is a small experiment?",
+        "tags": ["decision", "action", "learning"]
+      },
+      {
+        "id": "spark-global-006",
+        "question": "What kind of attention makes you feel most understood?",
+        "tags": ["communication", "connection", "care"]
+      },
+      {
+        "id": "spark-global-007",
+        "question": "What do you avoid noticing because noticing it would require a decision?",
+        "tags": ["avoidance", "decision", "truth"]
+      },
+      {
+        "id": "spark-global-008",
+        "question": "If your curiosity had a default setting, what would it search for first?",
+        "tags": ["curiosity", "thinking", "identity"]
+      },
+      {
+        "id": "spark-global-009",
+        "question": "What ordinary moment recently felt heavier than it should have, and what might it be pointing at?",
+        "tags": ["emotion", "daily-life", "meaning"]
+      },
+      {
+        "id": "spark-global-010",
+        "question": "Which opinion of yours is more inherited than chosen?",
+        "tags": ["values", "family", "identity"]
+      },
+      {
+        "id": "spark-global-011",
+        "question": "What would become easier if you tried to be precise instead of impressive?",
+        "tags": ["communication", "clarity", "ego"]
+      },
+      {
+        "id": "spark-global-012",
+        "question": "What question do you wish people asked you more often?",
+        "tags": ["connection", "conversation", "needs"]
+      }
+    ],
+    "indonesian": [
+      {
+        "id": "spark-id-001",
+        "question": "Bagian hidup mana yang terlihat baik-baik saja dari luar, tapi sebenarnya paling butuh kamu tanyakan ulang?",
+        "tags": ["refleksi", "identitas", "jujur"]
+      },
+      {
+        "id": "spark-id-002",
+        "question": "Nilai keluarga apa yang kamu ikuti karena sayang, bukan karena benar-benar kamu pilih?",
+        "tags": ["keluarga", "nilai", "budaya"]
+      },
+      {
+        "id": "spark-id-003",
+        "question": "Kapan terakhir kamu merasa harus terlihat kuat, padahal sebenarnya cuma ingin dimengerti?",
+        "tags": ["emosi", "relasi", "kerentanan"]
+      },
+      {
+        "id": "spark-id-004",
+        "question": "Apa yang kamu sebut realistis, padahal mungkin itu cuma cara halus untuk mengecilkan keinginanmu?",
+        "tags": ["ambisi", "takut", "mimpi"]
+      },
+      {
+        "id": "spark-id-005",
+        "question": "Di lingkungan kerja atau pertemananmu, obrolan apa yang sering dihindari karena takut jadi tidak enak?",
+        "tags": ["komunikasi", "kerja", "pertemanan"]
+      },
+      {
+        "id": "spark-id-006",
+        "question": "Kalau hidupmu sedang jadi FYP, pola apa yang terlalu sering muncul?",
+        "tags": ["pola", "media-sosial", "diri"]
+      },
+      {
+        "id": "spark-id-007",
+        "question": "Apa definisi sukses yang kamu curigai sebenarnya bukan milikmu?",
+        "tags": ["sukses", "tekanan", "identitas"]
+      },
+      {
+        "id": "spark-id-008",
+        "question": "Kapan kamu merasa paling jadi diri sendiri: saat sendirian, bersama teman, atau bersama keluarga?",
+        "tags": ["identitas", "relasi", "diri"]
+      },
+      {
+        "id": "spark-id-009",
+        "question": "Tradisi atau kebiasaan apa yang ingin kamu pahami dulu sebelum kamu lanjutkan atau tinggalkan?",
+        "tags": ["budaya", "keluarga", "makna"]
+      },
+      {
+        "id": "spark-id-010",
+        "question": "Apa hal kecil yang bikin kamu merasa diterima tanpa harus menjelaskan terlalu banyak?",
+        "tags": ["rasa-aman", "relasi", "komunikasi"]
+      },
+      {
+        "id": "spark-id-011",
+        "question": "Apa yang paling sering kamu tahan karena takut dianggap terlalu sensitif?",
+        "tags": ["emosi", "kejujuran", "relasi"]
+      },
+      {
+        "id": "spark-id-012",
+        "question": "Kalau kamu tidak perlu terlihat keren, hal apa yang sebenarnya ingin kamu pelajari tahun ini?",
+        "tags": ["belajar", "ambisi", "jujur"]
+      }
+    ]
+  },
+  "scenarios": {
+    "global": [
+      {
+        "id": "scenario-global-001",
+        "type": "Casual",
+        "text": "You are walking home with a friend after dinner. They keep checking their phone, then say, \"I think I am tired of being reachable all the time, but I also panic when people stop replying.\"",
+        "better": [
+          "What does being reachable give you, and what does it cost you?",
+          "When does the panic get loudest?",
+          "What kind of distance would feel healthy rather than lonely?"
+        ],
+        "tags": ["friendship", "phone", "boundaries"]
+      },
+      {
+        "id": "scenario-global-002",
+        "type": "Work",
+        "text": "During a project check-in, your teammate says, \"The work is moving, but I feel like I am carrying invisible decisions that nobody officially made.\"",
+        "better": [
+          "Which decision feels most invisible right now?",
+          "Where did the team create motion without creating agreement?",
+          "What would make the ownership feel explicit?"
+        ],
+        "tags": ["work", "clarity", "ownership"]
+      },
+      {
+        "id": "scenario-global-003",
+        "type": "Casual",
+        "text": "A friend laughs while describing their new routine, then pauses and says, \"I am doing all the right things, but I do not feel more like myself.\"",
+        "better": [
+          "Which part of the routine feels like care, and which part feels like performance?",
+          "When do you feel most like yourself lately?",
+          "What did you hope this routine would give you emotionally?"
+        ],
+        "tags": ["identity", "routine", "friendship"]
+      },
+      {
+        "id": "scenario-global-004",
+        "type": "Work",
+        "text": "After a meeting, your manager says, \"Everyone agreed quickly, and somehow that made me trust the decision less.\"",
+        "better": [
+          "What disagreement did not get enough space?",
+          "Which risk do you think people are quietly avoiding?",
+          "What would make the agreement feel more earned?"
+        ],
+        "tags": ["work", "decision", "conflict"]
+      },
+      {
+        "id": "scenario-global-005",
+        "type": "Casual",
+        "text": "Your cousin looks at old photos and says, \"I miss being that fearless. I do not know when I became so careful.\"",
+        "better": [
+          "What do you think carefulness has been protecting?",
+          "When do you still feel a little bit fearless?",
+          "What changed around you when you started becoming more careful?"
+        ],
+        "tags": ["family", "memory", "fear"]
+      },
+      {
+        "id": "scenario-global-006",
+        "type": "Casual",
+        "text": "A friend says, \"I keep saying I want a slower life, but every time I have free time I fill it immediately.\"",
+        "better": [
+          "What feeling shows up when the space is actually empty?",
+          "What does busyness help you avoid noticing?",
+          "What would a slower life need to feel safe?"
+        ],
+        "tags": ["rest", "avoidance", "pace"]
+      }
+    ],
+    "indonesian": [
+      {
+        "id": "scenario-id-001",
+        "type": "Casual",
+        "text": "Temanmu baru pulang kerja dan meletakkan tasnya di dekat pintu. Dia bilang, \"Aku capek pura-pura ambisius. Semua orang kayak lomba sukses, tapi aku bahkan belum yakin sukses versi aku itu apa.\"",
+        "better": [
+          "Bagian mana dari ambisi itu yang terasa milik kamu, dan bagian mana yang terasa cuma ikut tekanan?",
+          "Kapan kamu merasa paling jujur soal definisi suksesmu sendiri?",
+          "Kalau tidak perlu kelihatan keren, apa yang sebenarnya ingin kamu bangun?"
+        ],
+        "tags": ["kerja", "ambisi", "sukses"]
+      },
+      {
+        "id": "scenario-id-002",
+        "type": "Work",
+        "text": "Di chat grup kerja, seorang rekan bilang, \"Meeting tadi kelihatan rapi, tapi aku ngerasa semua orang setuju cuma biar cepat selesai. Aku takut masalah aslinya masih disembunyikan.\"",
+        "better": [
+          "Bagian mana dari meeting tadi yang menurutmu masih belum berani kita omongin?",
+          "Apa tanda kecil yang bikin kamu merasa ada masalah yang disembunyikan?",
+          "Kalau kita ulang meeting itu, pertanyaan apa yang perlu muncul lebih awal?"
+        ],
+        "tags": ["kerja", "meeting", "kejelasan"]
+      },
+      {
+        "id": "scenario-id-003",
+        "type": "Family",
+        "text": "Saat makan keluarga, saudaramu bercanda soal umur dan nikah. Setelah semua orang tertawa, sepupumu pelan-pelan bilang, \"Kadang aku bingung mana yang benar-benar aku mau dan mana yang cuma bikin keluarga tenang.\"",
+        "better": [
+          "Bagian mana dari pilihan itu yang terasa punya kamu sendiri?",
+          "Kapan tekanan keluarga terasa paling berat?",
+          "Kalau keluarga tidak perlu ditenangkan dulu, apa yang ingin kamu dengarkan dari dirimu?"
+        ],
+        "tags": ["keluarga", "tekanan", "pilihan"]
+      },
+      {
+        "id": "scenario-id-004",
+        "type": "Casual",
+        "text": "Seorang teman menutup Instagram lalu bilang, \"Aku tahu hidup orang di sana cuma potongan, tapi tetap aja rasanya aku ketinggalan terus.\"",
+        "better": [
+          "Bagian mana yang paling bikin kamu merasa tertinggal?",
+          "Kamu sedang membandingkan hidupmu dengan pencapaian, gaya hidup, atau rasa diterima?",
+          "Apa yang berubah kalau kamu melihat hidupmu dari ritmemu sendiri?"
+        ],
+        "tags": ["media-sosial", "perbandingan", "teman"]
+      },
+      {
+        "id": "scenario-id-005",
+        "type": "Work",
+        "text": "Setelah presentasi, rekanmu bilang, \"Aku senang dipuji, tapi jujur aku tidak tahu apakah pekerjaanku benar-benar bagus atau cuma kebetulan sesuai selera atasan.\"",
+        "better": [
+          "Feedback seperti apa yang kamu butuhkan supaya lebih percaya dengan kualitas kerjamu?",
+          "Bagian mana dari pekerjaanmu yang sebenarnya paling kamu banggakan?",
+          "Apa bedanya validasi dari atasan dan keyakinan dari diri sendiri buatmu?"
+        ],
+        "tags": ["kerja", "validasi", "percaya-diri"]
+      },
+      {
+        "id": "scenario-id-006",
+        "type": "Faith",
+        "text": "Seorang teman bilang setelah acara keluarga, \"Aku masih percaya, tapi akhir-akhir ini aku ingin memahami imanku dengan lebih dewasa, bukan cuma karena dari kecil begitu.\"",
+        "better": [
+          "Bagian mana dari imanmu yang ingin kamu pahami ulang dengan lebih dewasa?",
+          "Apa yang terasa tetap hangat, dan apa yang mulai terasa perlu ditanyakan?",
+          "Siapa yang bisa diajak ngobrol tanpa membuatmu merasa dihakimi?"
+        ],
+        "tags": ["iman", "keluarga", "makna"]
+      }
+    ]
+  },
+  "mentorPrompts": {
+    "global": {
+      "avoidance": [
+        "What are you protecting yourself from if you keep waiting?",
+        "What is the smallest honest version of this you could try before you feel ready?",
+        "What would you do next if the goal was learning, not proving?"
+      ],
+      "ambition": [
+        "What part of this desire feels alive, and what part feels like pressure?",
+        "If you took this ambition seriously, what would you practice this week?",
+        "Who do you become in the process if this works?"
+      ],
+      "emotion": [
+        "Where does that feeling show up most clearly: body, thoughts, or choices?",
+        "What might this feeling be asking you to notice before you fix it?",
+        "When does this feeling become louder, and when does it soften?"
+      ],
+      "relationship": [
+        "What do you most want the other person to understand?",
+        "What would make this feel like connection rather than performance?",
+        "What are you hoping they feel after talking with you?"
+      ],
+      "clarity": [
+        "What is the one thing that, if clarified, would make the rest easier?",
+        "What are two possible interpretations, and which one feels more honest?",
+        "What evidence would help you stop circling?"
+      ],
+      "creative": [
+        "What is the tiny version of this idea that would still feel meaningful?",
+        "Who is this really for, and what should they feel after using it?",
+        "What part should stay playful while you make it concrete?"
+      ]
+    },
+    "indonesian": {
+      "avoidance": [
+        "Apa yang sedang kamu lindungi dengan menunda ini?",
+        "Versi paling kecil dan jujur dari langkah ini seperti apa?",
+        "Kalau tujuannya belajar, bukan membuktikan diri, apa langkah berikutnya?"
+      ],
+      "ambition": [
+        "Bagian mana dari keinginan ini yang terasa hidup, dan bagian mana yang terasa seperti tekanan?",
+        "Kalau kamu serius dengan ambisi ini, apa yang perlu kamu latih minggu ini?",
+        "Kamu ingin menjadi orang seperti apa dalam proses mengejar ini?"
+      ],
+      "emotion": [
+        "Perasaan itu paling jelas muncul di tubuh, pikiran, atau pilihanmu?",
+        "Apa yang mungkin sedang diminta perasaan ini untuk kamu perhatikan?",
+        "Kapan perasaan ini jadi lebih keras, dan kapan mulai melunak?"
+      ],
+      "relationship": [
+        "Apa yang paling ingin kamu buat orang itu pahami?",
+        "Apa yang membuat obrolan ini terasa seperti koneksi, bukan performa?",
+        "Setelah ngobrol denganmu, kamu berharap dia merasa apa?"
+      ],
+      "clarity": [
+        "Satu hal apa yang kalau jelas akan membuat sisanya lebih mudah dipikirkan?",
+        "Ada dua tafsir apa dari situasi ini, dan mana yang terasa lebih jujur?",
+        "Bukti kecil apa yang bisa membantumu berhenti muter-muter?"
+      ],
+      "creative": [
+        "Versi kecil dari ide ini yang tetap bermakna seperti apa?",
+        "Ini sebenarnya untuk siapa, dan mereka perlu merasa apa setelah menggunakannya?",
+        "Bagian mana yang harus tetap playful saat kamu membuatnya lebih konkret?"
+      ]
+    }
+  }
+}

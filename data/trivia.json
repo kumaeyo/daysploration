@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "facts": [
+    {
+      "id": "trivia-001",
+      "category": "Indonesian history",
+      "title": "The Youth Pledge Was Identity Design",
+      "statement": "Before Indonesia was independent, young people were already practicing how to imagine one shared identity.",
+      "explanation": "The 1928 Youth Pledge matters because it turned language into a shared emotional project. Youth groups from different regions were not only discussing politics; they were imagining how strangers across islands could feel part of one identity. Bahasa Indonesia became practical, symbolic, and future-facing at the same time. It is a useful lens for thinking about belonging, accents, class, and how language can make a nation feel real before everyone has met each other.",
+      "links": [
+        {
+          "title": "Youth Pledge",
+          "url": "https://en.wikipedia.org/wiki/Youth_Pledge"
+        }
+      ],
+      "tags": ["Indonesia", "language", "identity"]
+    },
+    {
+      "id": "trivia-002",
+      "category": "Culture",
+      "title": "Borobudur Is A Walking Lesson",
+      "statement": "Borobudur is not only a monument; it is a physical journey through a worldview.",
+      "explanation": "Borobudur is powerful because visitors do not only look at it; they move through it. Its terraces, reliefs, and vertical structure can be read as a symbolic path through Buddhist cosmology. The building becomes architecture, memory system, and spiritual storytelling at once. That makes it useful for thinking about how humans turn abstract questions into spaces: desire, discipline, attention, and the slow movement toward meaning.",
+      "links": [
+        {
+          "title": "UNESCO Borobudur Temple Compounds",
+          "url": "https://whc.unesco.org/en/list/592/"
+        }
+      ],
+      "tags": ["Indonesia", "architecture", "religion"]
+    },
+    {
+      "id": "trivia-003",
+      "category": "Communication",
+      "title": "Small Talk Is Social Testing",
+      "statement": "Small talk is rarely about the topic; it is often about whether the room feels safe.",
+      "explanation": "Small talk can feel empty, but it does real social work. People use low-risk topics to test warmth, timing, attention, and whether the other person is available for something deeper. That is why the same sentence can feel fake with one person and comforting with another. The weather, traffic, or coffee is often just the door handle. The real question underneath is: can we be comfortable enough to continue?",
+      "links": [
+        {
+          "title": "Interpersonal communication",
+          "url": "https://en.wikipedia.org/wiki/Interpersonal_communication"
+        }
+      ],
+      "tags": ["communication", "relationships", "conversation"]
+    },
+    {
+      "id": "trivia-004",
+      "category": "Human behavior",
+      "title": "Dunbar's Number Is A Reminder, Not A Rule",
+      "statement": "Humans may not be built to maintain infinite meaningful relationships, even when apps make everyone reachable.",
+      "explanation": "Dunbar's number is often simplified as 150, but the deeper idea is more interesting than the exact count. Social connection has cognitive cost: remembering histories, emotional states, obligations, and trust patterns. Online networks can expand access, but not necessarily depth. The concept is useful because it makes you ask which relationships are truly maintained, which are only visible, and how much attention a meaningful bond actually needs.",
+      "links": [
+        {
+          "title": "Dunbar's number",
+          "url": "https://en.wikipedia.org/wiki/Dunbar%27s_number"
+        }
+      ],
+      "tags": ["human", "relationships", "attention"]
+    },
+    {
+      "id": "trivia-005",
+      "category": "Pop culture",
+      "title": "Pop Culture Is Emotional History",
+      "statement": "What a generation jokes about often reveals what it is anxious about.",
+      "explanation": "Pop culture can look lightweight because it travels through songs, memes, films, and trends. But those formats often preserve what people were worried about, proud of, tired of, or trying to become. A meme can hold class tension. A fandom can hold belonging. A song can preserve the emotional weather of an era. Studying pop culture is not only about taste; it is also about social memory.",
+      "links": [
+        {
+          "title": "Popular culture",
+          "url": "https://en.wikipedia.org/wiki/Popular_culture"
+        }
+      ],
+      "tags": ["pop culture", "identity", "generation"]
+    },
+    {
+      "id": "trivia-006",
+      "category": "History",
+      "title": "Coffeehouses Were Early Social Feeds",
+      "statement": "Before timelines and group chats, coffeehouses helped people trade news, gossip, and influence.",
+      "explanation": "European coffeehouses mattered because they gave people a public place to gather, read, debate, and exchange information. They were social spaces, business hubs, and informal newsrooms. The interesting part is the tension: they could spread insight, rumor, political energy, and commercial opportunity all at once. That makes them a useful mirror for modern feeds, podcasts, and comment sections: the tool changes, but the social hunger stays familiar.",
+      "links": [
+        {
+          "title": "Coffeehouse",
+          "url": "https://en.wikipedia.org/wiki/Coffeehouse"
+        }
+      ],
+      "tags": ["history", "communication", "media"]
+    },
+    {
+      "id": "trivia-007",
+      "category": "Indonesian culture",
+      "title": "Wayang Is Memory Technology",
+      "statement": "Wayang is not only performance; it is a way to store ethics, politics, humor, and philosophy in story.",
+      "explanation": "Wayang works because it can carry many layers at once. A performance can entertain, teach moral conflict, preserve older stories, comment on current politics, and create a shared cultural room. The puppets are visual, but the power is social: people gather around narrative and recognize parts of themselves through characters. That makes wayang useful for thinking about how culture keeps wisdom alive without turning it into a lecture.",
+      "links": [
+        {
+          "title": "Wayang",
+          "url": "https://en.wikipedia.org/wiki/Wayang"
+        }
+      ],
+      "tags": ["Indonesia", "storytelling", "culture"]
+    },
+    {
+      "id": "trivia-008",
+      "category": "Religion",
+      "title": "Rituals Make Belief Tangible",
+      "statement": "A ritual can turn an invisible belief into something the body remembers.",
+      "explanation": "Rituals matter because they give ideas a repeated shape. Prayer, fasting, pilgrimage, lighting candles, or gathering at certain times can make belief feel embodied rather than abstract. The action does not only express meaning; it also trains attention, memory, identity, and belonging. That is why rituals can comfort people even before they can explain exactly why. They help humans rehearse what matters.",
+      "links": [
+        {
+          "title": "Ritual",
+          "url": "https://en.wikipedia.org/wiki/Ritual"
+        }
+      ],
+      "tags": ["religion", "meaning", "habit"]
+    },
+    {
+      "id": "trivia-009",
+      "category": "Indonesian history",
+      "title": "Spices Changed The Map",
+      "statement": "The search for spices helped pull distant islands into global power struggles.",
+      "explanation": "Spices were not just ingredients; they were economic magnets. Nutmeg, cloves, pepper, and other goods made parts of the Indonesian archipelago deeply important to global trade. The desire for flavor, medicine, preservation, and luxury connected local communities to merchants, empires, violence, and negotiation. This makes the spice trade a useful reminder that ordinary objects can carry huge histories of power, movement, and desire.",
+      "links": [
+        {
+          "title": "Spice trade",
+          "url": "https://en.wikipedia.org/wiki/Spice_trade"
+        }
+      ],
+      "tags": ["Indonesia", "trade", "colonial history"]
+    },
+    {
+      "id": "trivia-010",
+      "category": "Culture",
+      "title": "Batik Is A Social Code",
+      "statement": "A piece of cloth can carry geography, status, memory, and identity at the same time.",
+      "explanation": "Batik is interesting because it is not only visual decoration. Patterns can carry regional identity, family memory, ceremony, status, and personal taste. The cloth sits close to the body, but it also connects someone to a wider cultural system. That is why batik can feel formal, emotional, political, and everyday depending on the context. It shows how objects can speak socially before a person says anything.",
+      "links": [
+        {
+          "title": "Batik",
+          "url": "https://en.wikipedia.org/wiki/Batik"
+        }
+      ],
+      "tags": ["Indonesia", "fashion", "identity"]
+    },
+    {
+      "id": "trivia-011",
+      "category": "Communication",
+      "title": "Gossip Can Be Social Glue",
+      "statement": "Gossip is not always shallow; sometimes it is how groups negotiate trust and norms.",
+      "explanation": "Gossip has a bad reputation, and often for good reason. But socially, it can also help groups share warnings, define boundaries, test values, and understand who can be trusted. The problem is not only gossip itself; it is whether it becomes cruelty, distortion, or status games. This makes gossip an interesting topic because it sits between care and harm, information and entertainment, bonding and exclusion.",
+      "links": [
+        {
+          "title": "Gossip",
+          "url": "https://en.wikipedia.org/wiki/Gossip"
+        }
+      ],
+      "tags": ["communication", "trust", "groups"]
+    },
+    {
+      "id": "trivia-012",
+      "category": "Human behavior",
+      "title": "Nostalgia Is Not Just Looking Back",
+      "statement": "Nostalgia often tells you what emotional ingredient is missing now.",
+      "explanation": "Nostalgia can seem like escape, but it often carries useful information. When people miss an old version of themselves, they may be missing freedom, closeness, courage, simplicity, or a sense of possibility. The past is not always better; sometimes it is just clearer because the emotional symbol is easier to name. Nostalgia becomes useful when it asks: what exactly did that time give me, and can I rebuild part of it differently now?",
+      "links": [
+        {
+          "title": "Nostalgia",
+          "url": "https://en.wikipedia.org/wiki/Nostalgia"
+        }
+      ],
+      "tags": ["memory", "emotion", "identity"]
+    }
+  ]
+}

@@ -18,6 +18,10 @@
         </a>
 
         <nav class="nav-list" aria-label="Primary">
+          <button class="nav-button is-active" type="button" data-view-link="trivia">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 4 7l8 4 8-4-8-4z"/><path d="M4 12l8 4 8-4"/><path d="M4 17l8 4 8-4"/></svg>
+            Trivia
+          </button>
           <button class="nav-button" type="button" data-view-link="practice">
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 10h8M8 14h5"/><path d="M21 12a8 8 0 0 1-8 8H7l-4 2 1.4-4.2A8 8 0 1 1 21 12z"/></svg>
             Practice
@@ -26,7 +30,7 @@
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
             Thoughts
           </button>
-          <button class="nav-button is-active" type="button" data-view-link="board">
+          <button class="nav-button" type="button" data-view-link="board">
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 3a4 4 0 0 0-4 4v1.2A4 4 0 0 0 6 16v1a4 4 0 0 0 7 2.6"/><path d="M15 3a4 4 0 0 1 4 4v1.2a4 4 0 0 1-1 7.8v1a4 4 0 0 1-7 2.6"/><path d="M12 4v16M8 9h2M14 9h2M8 15h2M14 15h2"/></svg>
             Memory
           </button>
@@ -46,9 +50,23 @@
       </aside>
 
       <main class="workspace">
+        <section class="view is-active" id="trivia" aria-labelledby="trivia-title">
+          <div class="view-heading">
+            <h2 id="trivia-title">Trivia</h2>
+            <button class="ghost-button" type="button" id="refreshTriviaButton">Next Fact</button>
+          </div>
+
+          <div id="triviaFeed" class="trivia-feed" aria-live="polite"></div>
+        </section>
+
         <section class="view" id="practice" aria-labelledby="practice-title">
           <div class="view-heading">
             <h2 id="practice-title">Practice your curiosity</h2>
+          </div>
+
+          <div class="mode-tabs" aria-label="Practice mode">
+            <button class="is-active" type="button" data-practice-mode="single">Single question</button>
+            <button type="button" data-practice-mode="roleplay">Roleplay</button>
           </div>
 
           <div class="practice-layout">
@@ -61,22 +79,43 @@
               <p id="scenarioText" class="scenario-text"></p>
             </section>
 
-            <section class="panel input-panel" aria-labelledby="question-title">
+            <section class="panel input-panel single-practice-panel" aria-labelledby="question-title">
               <h3 id="question-title">Your follow-up question</h3>
               <label class="sr-only" for="questionInput">Your follow-up question</label>
-              <textarea id="questionInput" data-testid="question-input" rows="8" placeholder="What changed for you around that?"></textarea>
+              <textarea id="questionInput" data-testid="question-input" rows="3" placeholder="What changed for you around that?"></textarea>
               <div class="button-row">
+                <button class="secondary-button icon-text-button" type="button" id="practiceVoiceButton" title="Speak your question" aria-label="Speak your question">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/><path d="M8 22h8"/></svg>
+                </button>
                 <button class="primary-button" type="button" id="scoreQuestionButton" data-testid="score-question">Send</button>
               </div>
             </section>
 
-            <section class="panel score-panel" aria-live="polite" aria-labelledby="score-title">
+            <section class="panel score-panel single-practice-panel" aria-live="polite" aria-labelledby="score-title">
               <div class="panel-title-row">
                 <h3 id="score-title">Feedback</h3>
               </div>
               <div id="questionFeedback" class="empty-state">
                 <strong>No feedback yet.</strong>
                 <span>Send a question to review openness, depth, and care.</span>
+              </div>
+            </section>
+
+            <section class="panel roleplay-panel is-hidden" id="roleplayPanel" aria-labelledby="roleplay-title">
+              <div class="panel-title-row">
+                <h3 id="roleplay-title">Conversation roleplay</h3>
+                <button class="text-button" type="button" id="newRoleplayButton">Restart</button>
+              </div>
+              <div id="roleplayThread" class="chat-thread roleplay-thread" aria-live="polite"></div>
+              <div class="chat-composer">
+                <label class="sr-only" for="roleplayInput">Roleplay message</label>
+                <textarea id="roleplayInput" rows="4" placeholder="Ask your next follow-up"></textarea>
+                <div class="button-row">
+                  <button class="secondary-button icon-text-button" type="button" id="roleplayVoiceButton" title="Speak your question" aria-label="Speak your question">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/><path d="M8 22h8"/></svg>
+                  </button>
+                  <button class="primary-button" type="button" id="roleplaySendButton">Send</button>
+                </div>
               </div>
             </section>
           </div>
@@ -112,7 +151,12 @@
             <div class="chat-composer">
               <label class="sr-only" for="brainstormInput">Brainstorm message</label>
               <textarea id="brainstormInput" data-testid="brainstorm-input" rows="4" placeholder="jot your thoughts"></textarea>
-              <button class="primary-button" type="button" id="brainstormSendButton">Send</button>
+              <div class="button-row">
+                <button class="secondary-button icon-text-button" type="button" id="brainstormVoiceButton" title="Speak your thought" aria-label="Speak your thought">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/><path d="M8 22h8"/></svg>
+                </button>
+                <button class="primary-button" type="button" id="brainstormSendButton">Send</button>
+              </div>
             </div>
           </section>
 
@@ -123,6 +167,9 @@
               <label class="sr-only" for="thoughtInput">Quick note</label>
               <textarea id="thoughtInput" data-testid="thought-input" rows="12" placeholder="jot your thoughts"></textarea>
               <div class="button-row">
+                <button class="secondary-button icon-text-button" type="button" id="quickVoiceButton" title="Speak your note" aria-label="Speak your note">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/><path d="M8 22h8"/></svg>
+                </button>
                 <button class="primary-button" type="button" id="processThoughtButton" data-testid="process-thought">Save</button>
                 <button class="secondary-button" type="button" id="clearThoughtButton">Clear</button>
               </div>
@@ -131,7 +178,7 @@
           <button class="session-fab" type="button" id="startNewSessionButton">Start new session</button>
         </section>
 
-        <section class="view is-active" id="board" aria-labelledby="board-title">
+        <section class="view" id="board" aria-labelledby="board-title">
           <div class="view-heading">
             <h2 id="board-title">Your Activity</h2>
             <div class="download-menu">
@@ -151,6 +198,9 @@
             <button type="button" data-period="all">All</button>
           </div>
 
+          <label class="sr-only" for="memorySearchInput">Search memory</label>
+          <input id="memorySearchInput" class="search-input" type="search" placeholder="Search memory">
+
           <section class="dashboard-strip" aria-label="Activity dashboard">
             <button class="dashboard-card is-active" type="button" id="thoughtsMetricButton">
               <span>Thoughts</span>
@@ -162,12 +212,19 @@
               <strong id="practiceAttempts">0</strong>
               <small id="practiceHelper">total 0 reps</small>
             </button>
+            <button class="dashboard-card" type="button" id="savedQuestionsMetricButton">
+              <span>Saved questions</span>
+              <strong id="savedQuestionCount">0</strong>
+              <small>Ready to discuss</small>
+            </button>
             <button class="dashboard-card" type="button" id="categoryMetricButton">
               <span>Top category</span>
               <strong id="topCategory">None</strong>
               <small>Most active memory</small>
             </button>
           </section>
+
+          <section class="personal-insight" id="personalInsight" aria-label="Personal insight"></section>
 
           <div id="boardColumns" class="memory-content"></div>
         </section>
@@ -187,6 +244,14 @@
                 <div>
                   <dt>Current mode</dt>
                   <dd id="currentMode">Notion connected</dd>
+                </div>
+                <div>
+                  <dt>Thinking mode</dt>
+                  <dd id="aiStatus">Checking</dd>
+                </div>
+                <div>
+                  <dt>AI skill file</dt>
+                  <dd id="skillStatus">Checking</dd>
                 </div>
                 <div>
                   <dt>Database fields</dt>
@@ -212,6 +277,19 @@
                 <button class="secondary-button" type="button" id="loadDemoDataButton">Add demo entries</button>
                 <button class="secondary-button danger" type="button" id="clearEntriesButton">Reset memory</button>
               </div>
+            </section>
+
+            <section class="panel" aria-labelledby="context-title">
+              <div class="panel-title-row">
+                <h3 id="context-title">Context</h3>
+                <span class="panel-status">Prompts</span>
+              </div>
+              <label class="field-label" for="languageSelect">Question context</label>
+              <select id="languageSelect" class="select-input">
+                <option value="en">Global</option>
+                <option value="id">Indonesian</option>
+              </select>
+              <p class="helper-copy">Indonesian context makes generated questions, roleplay, brainstorm prompts, and practice suggestions use Bahasa Indonesia and local references.</p>
             </section>
           </div>
         </section>
