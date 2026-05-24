@@ -1,0 +1,9 @@
+{
+  "name": "daysprolartion",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A mobile-first personal workspace for thought capture, curiosity practice, and daily reflection.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
